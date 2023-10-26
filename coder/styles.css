@@ -85,3 +85,55 @@ body {
     font-size: 14px;
     padding: 10px 0;
 }
+/* ... (estilos anteriores) ... */
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+    .header__title {
+        font-size: 28px;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav__item {
+        margin: 10px 0;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .main__section-title {
+        font-size: 20px;
+    }
+
+    .main__service-item, .main__achievement-item {
+        padding: 10px;
+    }
+}
+
+/* Estilos para pantallas muy pequeñas (móviles) */
+@media screen and (max-width: 480px) {
+    .header__title {
+        font-size: 24px;
+    }
+
+    .nav__item {
+        font-size: 14px;
+    }
+
+    .main__section-title {
+        font-size: 18px;
+    }
+
+    .main__section-text {
+        font-size: 14px;
+    }
+
+    .main__service-item, .main__achievement-item {
+        font-size: 12px;
+    }
+}
